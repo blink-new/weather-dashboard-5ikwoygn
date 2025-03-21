@@ -44,3 +44,83 @@
 43 silly fetch manifest lucide-react@^0.323.0
 44 http fetch GET 200 https://registry.npmjs.org/lucide-react 100ms (cache miss)
 45 silly fetch manifest next@14.1.0
+46 http fetch GET 200 https://registry.npmjs.org/next 1447ms (cache miss)
+47 silly fetch manifest @opentelemetry/api@^1.1.0
+48 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fapi 61ms (cache miss)
+49 silly fetch manifest react-dom@^18
+50 http fetch GET 200 https://registry.npmjs.org/react-dom 263ms (cache miss)
+51 silly fetch manifest sass@^1.3.0
+52 http fetch GET 200 https://registry.npmjs.org/sass 57ms (cache miss)
+53 silly fetch manifest next-themes@^0.2.1
+54 http fetch GET 200 https://registry.npmjs.org/next-themes 48ms (cache miss)
+55 silly fetch manifest tailwind-merge@^2.2.1
+56 http fetch GET 200 https://registry.npmjs.org/tailwind-merge 77ms (cache miss)
+57 silly fetch manifest tailwindcss-animate@^1.0.7
+58 http fetch GET 200 https://registry.npmjs.org/tailwindcss-animate 38ms (cache miss)
+59 silly fetch manifest tailwindcss@^3.3.0
+60 http fetch GET 200 https://registry.npmjs.org/tailwindcss 367ms (cache miss)
+61 silly fetch manifest @types/react-dom@^18
+62 http fetch GET 200 https://registry.npmjs.org/@types%2freact-dom 57ms (cache miss)
+63 silly fetch manifest autoprefixer@^10.0.1
+64 http fetch GET 200 https://registry.npmjs.org/autoprefixer 56ms (cache miss)
+65 silly fetch manifest postcss@^8
+66 http fetch GET 200 https://registry.npmjs.org/postcss 51ms (cache miss)
+67 silly fetch manifest eslint@^8
+68 http fetch GET 200 https://registry.npmjs.org/eslint 72ms (cache miss)
+69 silly fetch manifest eslint-config-next@14.1.0
+70 http fetch GET 200 https://registry.npmjs.org/eslint-config-next 247ms (cache miss)
+71 silly fetch manifest typescript@^5
+72 http fetch GET 200 https://registry.npmjs.org/typescript 269ms (cache miss)
+73 silly placeDep ROOT @radix-ui/react-slot@1.1.2 OK for: weather-dashboard@0.1.0 want: ^1.0.2
+74 silly placeDep ROOT @types/react@18.3.19 REPLACE for: weather-dashboard@0.1.0 want: ^18
+75 silly placeDep ROOT @types/react-dom@18.3.5 REPLACE for: weather-dashboard@0.1.0 want: ^18
+76 silly placeDep ROOT autoprefixer@10.4.21 OK for: weather-dashboard@0.1.0 want: ^10.0.1
+77 silly placeDep ROOT eslint@8.57.1 OK for: weather-dashboard@0.1.0 want: ^8
+78 silly placeDep ROOT eslint-config-next@14.1.0 OK for: weather-dashboard@0.1.0 want: 14.1.0
+79 timing idealTree Completed in 9711ms
+80 timing command:install Completed in 9730ms
+81 verbose stack Error: could not resolve
+81 verbose stack     at PlaceDep.failPeerConflict (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/place-dep.js:503:25)
+81 verbose stack     at new PlaceDep (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/place-dep.js:157:21)
+81 verbose stack     at #buildDepStep (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:940:18)
+81 verbose stack     at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:203:7)
+81 verbose stack     at async Promise.all (index 1)
+81 verbose stack     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:154:5)
+81 verbose stack     at async Install.exec (/usr/local/lib/node_modules/npm/lib/commands/install.js:153:5)
+81 verbose stack     at async module.exports (/usr/local/lib/node_modules/npm/lib/cli-entry.js:61:5)
+82 verbose cwd /home/project
+83 verbose Linux 6.1.102
+84 verbose node v21.7.3
+85 verbose npm  v10.5.0
+86 error code ERESOLVE
+87 error ERESOLVE could not resolve
+88 error
+89 error While resolving: weather-dashboard@0.1.0
+89 error Found: lucide-react@0.483.0
+89 error node_modules/lucide-react
+89 error   lucide-react@"^0.323.0" from the root project
+89 error
+89 error Could not resolve dependency:
+89 error lucide-react@"^0.323.0" from the root project
+89 error
+89 error Conflicting peer dependency: react@18.3.1
+89 error node_modules/react
+89 error   peer react@"^16.5.1 || ^17.0.0 || ^18.0.0" from lucide-react@0.323.0
+89 error   node_modules/lucide-react
+89 error     lucide-react@"^0.323.0" from the root project
+89 error
+89 error Fix the upstream dependency conflict, or retry
+89 error this command with --force or --legacy-peer-deps
+89 error to accept an incorrect (and potentially broken) dependency resolution.
+90 error
+90 error
+90 error For a full report see:
+90 error /home/user/.npm/_logs/2025-03-21T07_36_46_262Z-eresolve-report.txt
+91 verbose exit 1
+92 timing npm Completed in 10020ms
+93 verbose unfinished npm timer reify 1742542606554
+94 verbose unfinished npm timer reify:loadTrees 1742542606561
+95 verbose unfinished npm timer idealTree:buildDeps 1742542606660
+96 verbose unfinished npm timer idealTree:#root 1742542606660
+97 verbose code 1
+98 error A complete log of this run can be found in: /home/user/.npm/_logs/2025-03-21T07_36_46_262Z-debug-0.log
